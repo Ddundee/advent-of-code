@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 
 const inputPath = resolve(Deno.cwd(), "input.txt");
 const testInputPath = resolve(Deno.cwd(), "test_input.txt");
+// DO NOT CHANGE ABOVE
 
 const input = readFileSync(inputPath, "utf-8");
 
@@ -19,6 +20,7 @@ for (let i = 0; i < sorted[0].length; i++) {
     acc += Math.abs(sorted[0][i] - sorted[1][i])
 }
 
+// DO NOT CHANGE BELOW
 const result = acc
 
 console.log(result)
